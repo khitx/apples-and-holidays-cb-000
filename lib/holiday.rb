@@ -61,11 +61,12 @@ def all_supplies_in_holidays(holiday_hash)
     #holidays.values.flatten
     #puts "  #{holidays.to_s.capitalize}: #{holidays.values.flatten}"
     holidays.each do |holiday, supplies|
-      supplies.each do |item|
+       puts "  #{holiday.to_s.capitalize}: #{supplies.to_s}"      
+#      supplies.each do |item|
 #        puts "  #{holiday.to_s.capitalize}: #{supplies.each {|item| item}}"
 #        puts "  #{holiday.to_s.capitalize}: #{supplies.flatten}"
-        puts "  #{holiday.to_s.capitalize}: #{item}"
-      end
+#        puts "  #{holiday.to_s.capitalize}: #{item}"
+#      end
     end
   end
 end
